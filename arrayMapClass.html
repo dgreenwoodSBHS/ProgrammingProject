@@ -1,0 +1,42 @@
+<!doctype html>
+<body>
+	<canvas id="gc" width="400" height="400"></canvas>
+	<script>
+		var canvas, ctx;
+		
+		window.onload = function(){
+			canvas = document.getElementById('gc');
+			ctx = canvas.getContext('2d');
+			
+			setInterval(mainloop, 50/1000);
+		}
+		
+		function mainloop(){
+			
+		}
+		
+		function imageSetup(){
+			 
+		}
+		
+		class ImageGrid{
+			constructor(src,sx,sy,sw,sh,x,y,w,h){
+				this.src = src;
+				this.sx = sx;
+				this.sy = sy;
+				this.sw = sw;
+				this.sh = sh;
+				this.x = x;
+				this.y = y;
+				this.w = w;
+				this.h = h;
+			}
+			
+			imageDraw(){
+				ctx.drawImage(src,sx,sy,sw,sh,x,y,w,h);
+			}
+		}
+	
+	
+	</script>
+</body>
